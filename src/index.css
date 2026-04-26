@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌸 Theme Colors */
+:root {
+  --pink-main: #ec4899;
+  --pink-soft: #fce7f3;
+  --pink-accent: #f472b6;
+  --purple-soft: #f3e8ff;
+  --text-main: #4b5563;
+}
+
+/* 🌸 Base */
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #fff0f6, #fdf2f8, #f3e8ff);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* 🌸 Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 114, 182, 0.2);
+  box-shadow: 0 6px 25px rgba(236, 72, 153, 0.1);
+  border-radius: 16px;
+}
+
+/* 🌸 Inputs */
+input,
+select {
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--pink-main);
+}
+
+/* 🌸 Buttons */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* 💕 Primary Button */
+.btn-accent {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+}
+
+/* 🌸 Wishlist Card */
+.wish-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.08);
+  transition: all 0.25s ease;
+}
+
+.wish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(236, 72, 153, 0.15);
+}
+
+/* 🌸 Category Pill */
+.category-pill {
+  background: var(--pink-soft);
+  color: var(--pink-main);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ❤️ Heart */
+.heart {
+  transition: transform 0.2s ease;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+/* 🌸 Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(236, 72, 153, 0.1);
+}
+
+/* 🌸 Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 72, 153, 0.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.6);
+}

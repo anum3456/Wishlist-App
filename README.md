@@ -36,3 +36,7 @@ npm install
 
 npm run dev
 http://localhost:5173
+
+```
+## 🌐 Live Demo
+https://wishlist-app-ruby.vercel.app/
